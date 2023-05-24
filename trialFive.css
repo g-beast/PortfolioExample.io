@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0077be;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+   font-size: 2rem;
+  margin: 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    color: #b80b0b;
+    font-size: 15px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .intro-text {
+    width: 50%;
+    float: left;
+  }
+  
+  .intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text p {
+    font-size: 1.2rem;
+  }
+  
+  .intro-photo {
+    width: 50%;
+    float: right;
+    text-align: center;
+  }
+  
+  .intro-photo img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .video-container iframe {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .document-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .document-container a {
+    display: block;
+    background-color: #0077be;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+
+  .document-container a:hover {
+    color: #dcdd84;
+    font-size: 15px;
+  }
+  
+  .academic-container {
+    margin-top: 20px;
+  }
+  
+  .academic-container p {
+    font-size: 1.2rem;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+   width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    max-width: 60%;
+    border-radius: 5px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin: 5px;
+  }
+  
+  .project p {
+    font-size: 1.2rem;
+  }
+  /* ---------------------- */
+  .pricing-overview {
+    border-bottom: 1px solid #e4ebf3;
+    padding: 80px 30px;
+    position: relative;
+    background-color: rgba(24, 242, 242,0.3);
+  }
+  
+  .container-2 {
+    width: 100%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pricing-description {
+    max-width: 550px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pricing-grid {
+    grid-column-gap: 64px;
+    grid-row-gap: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-top: 50px;
+    display: grid;
+  }
+  
+  .pricing-card-three {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  
+  .pricing-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  
+  .pricing-card-text {
+    margin-bottom: 20px;
+  }
+  
+  .features-metrics {
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #e4ebf3;
+    padding: 60px 30px;
+    position: relative;
+  }
+  /* ------------------------- */
+  .social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-container a {
+    display: block;
+    background: linear-gradient(160deg, #1a2020, #7dc4c7);
+    color: #fff;
+    text-decoration: none;
+    margin:5%;
+    border-radius: 50px;
+  }
+  
+  .social-container a:hover { 
+    background: linear-gradient(160deg, #e7df95, #d3875b);
+  }
+  .social-container a i {
+    font-size: 2.6rem;
+  }
+
+  footer {
+    background-color: #0077be;
+    color: #fff;
+    padding: 20px;
+   text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .intro-text, .intro-photo {
+      width: 100%;
+      float: none;
+    }
+    
+    .video-container iframe {
+      width: 100%;
+    }
+    
+    .project {
+      width: 100%;
+    }
+    .pricing-grid {
+      grid-column-gap: 3px;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    header nav ul {
+      display: block;
+      text-align: right;
+    }
+  }
+  
