@@ -244,10 +244,10 @@
       grid-column-gap: 3px;
     }
   }
-  @media screen and (max-width: 560px) {
+/*   @media screen and (max-width: 560px) {
     header nav ul {
       display: block;
       text-align: right;
     }
-  }
+  } */
   
